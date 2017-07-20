@@ -13,7 +13,7 @@ int main()
         if(arr[i]<arr[i-1])
         {
             printf("Array should be sorted in ascending");
-            goto end;
+            return 0;
         }
     }
   
@@ -23,5 +23,5 @@ int main()
             break;
     }
     printf("%d",i);
-    end : return 0;
+    return 0;
 }⁠⁠⁠⁠
