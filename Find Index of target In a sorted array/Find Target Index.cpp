@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    int n,target,i;
-    cin >> n;
+    int size,target,i;
+    cin >> size;
     vector<int> arr(n);
-    for(i=0;i<n;i++)
+    for(i=0;i<size;i++)
     cin >> arr[i];
     cin >> target;
-    for(i=1;i<n;i++)
+    for(i=1;i<size;i++)
     {
         if(arr[i]<arr[i-1])
         {
@@ -20,7 +20,7 @@ int main()
         }
     }
 
-    for(i=0;i<n;i++)
+    for(i=0;i<size;i++)
     {
         if(arr[i]>=target)
             break;
