@@ -2,12 +2,12 @@
 
 int main()
 {
-    int n, arr[1000], t,i;
+    int n, arr[1000], target,i;
     scanf("%d",&n);
     
     for(i=0;i<n;i++)
     scanf("%d",&arr[i]);
-    scanf("%d",&t);
+    scanf("%d",&target);
     for(i=1;i<n;i++)
     {
         if(arr[i]<arr[i-1])
@@ -19,10 +19,10 @@ int main()
   
     for(i=0;i<n;i++)
     {
-        if(arr[i]==t)
+        if(arr[i]==target)
             break;
         else
-        if(arr[i]>t)
+        if(arr[i]>target)
             break;
     }
     printf("%d",i);
