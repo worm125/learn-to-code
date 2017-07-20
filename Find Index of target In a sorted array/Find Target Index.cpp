@@ -22,10 +22,7 @@ int main()
 
     for(i=0;i<n;i++)
     {
-        if(arr[i]==target)
-            break;
-        else
-        if(arr[i]>target)
+        if(arr[i]>=target)
             break;
     }
     cout << i;
