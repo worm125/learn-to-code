@@ -2,13 +2,13 @@
 
 int main()
 {
-    int n, arr[1000], target,i;
-    scanf("%d",&n);
+    int size, arr[1000], target,i;
+    scanf("%d",&size);
     
-    for(i=0;i<n;i++)
+    for(i=0;i<size;i++)
     scanf("%d",&arr[i]);
     scanf("%d",&target);
-    for(i=1;i<n;i++)
+    for(i=1;i<size;i++)
     {
         if(arr[i]<arr[i-1])
         {
@@ -17,7 +17,7 @@ int main()
         }
     }
   
-    for(i=0;i<n;i++)
+    for(i=0;i<size;i++)
     {
         if(arr[i]>=target)
             break;
